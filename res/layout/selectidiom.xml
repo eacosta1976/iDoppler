@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightblue">
+    
+  
+   
+      <!-- IMAGE TOP -->
+
+       <ImageView
+           android:id="@+id/imgMotherBaner"
+           android:layout_width="match_parent"
+           android:layout_height="140dp"
+           android:src="@drawable/motherbanner" />
+       
+       
+    
+      <!-- FLAG IMAGES -->     
+      <LinearLayout 
+          android:id="@+id/layLinear"
+          android:orientation="horizontal"
+          android:background="@color/lightblue"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imgMotherBaner">
+        
+        <ImageView
+                android:id="@+id/imgMexico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.0"
+                android:src="@drawable/mexflag" />
+    
+        <ImageView
+            android:id="@+id/imgUsa"
+            android:layout_width= "wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="1.0"
+            android:layout_toRightOf="@+id/imgMexico"
+            android:src="@drawable/usaflag"  />
+       
+       </LinearLayout>       
+               
+        <!--  SELECT YOUR IDIOM COMBO BOX -->
+         <TextView
+                android:id="@+id/lblIdiom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#FF69B4"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:text="@string/Idiom"
+                android:layout_below="@+id/layLinear"
+                android:paddingTop="20dp"/>
+                
+         <Spinner
+             android:id="@+id/spinIdiom"
+             android:layout_width="150dp"
+             android:layout_height="35dp"
+             android:layout_below="@+id/lblIdiom"
+             android:paddingTop="20dp"
+             android:layout_centerInParent="true"
+             android:entries="@array/idioms"
+             android:prompt="@string/idiom_prompt"/>
+         
+         <TextView
+            android:id="@+id/lblIdiomSelected"
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinIdiom" 
+            android:textColor="#FF69B4"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:paddingTop="15dp"/>
+         
+         <!--  BUTTON NEXT -->
+         <Button
+              android:id="@+id/cmdIdiomNext"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lblIdiomSelected"
+              android:layout_centerInParent="true"
+              android:background="@drawable/botnext"
+              android:gravity="center"
+              android:layout_marginTop="15dp"/>
+       
+       <!-- ================================================== -->   
+ 
+</RelativeLayout>

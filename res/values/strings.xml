@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Mother Data Screen -->
+    <string name="emptyString"></string>
+    <string name="app_name">iDoppler</string>
+    <string name="MotherName">Your Name</string>
+    <string name="BabyName">Baby Name</string>
+    <string name="DueDate">Due Date</string>
+    <string name="Email">Your Email</string>
+   
+    <!-- Localization Constants -->
+    <string name="Idiom">Select your language / selecciona tu idioma</string>
+    <string name="idiom_prompt">Idiom/Idioma</string>
+    <string-array name="idioms">
+        <item>English</item>
+        <item>Espanol</item>
+    </string-array>
+    <string name="english">English</string>
+    <string name="espanol">Espanol</string>
+    <string name="curLanguage">Current language:  </string>
+    <string name="englishLan">en_US</string>
+    <string name="espanolLan">es_US</string>
+    
+    <!-- SUCCESS NOTIFICATIONS -->
+    <string name="motherdatareg_succes">Data registered sucessfully</string>
+    
+    <!--  ERROR NOTIFICATIONS -->
+    <string name="motherdatareg_error">An error occur when registering the data</string>
+    
+    <!-- MAIN DOPPLER SCREEN -->
+    <string name="startDoppler">Start</string>
+    <string name="stopDoppler">Stop</string>
+    <string name="startPlay">Play</string>
+    <string name="startRecording">Start recording baby beats</string>
+    <string name="stopRecording">Stop recording baby beats</string>
+    <string name="reproducingBabyBeats">Playing baby beats</string>
+    <string name="noFileToPlay"> There is no file to play</string>
+    
+    <!--  Error Messages -->
+    <string name="errorDopplerNotConnected">Error: Doppler not connected</string>
+    <string name="errorPlayingBabyBeats_DopplerConnected">Error: Disconnect Doppler to hear baby beats</string>
+    <string name="errorStillRecordingBeats">Error: Recording baby beats, to reproduce stop recording and unplug Doppler</string>
+    <string name="errorAudioNotInitialized">ERROR: Audio Not initialized</string>
+    <string name="errorAudioInvalidOperation">ERROR: Audio Invalid Operation</string>
+    <string name="errorAudioBadValue">ERROR: Audio Bad Value</string>
+    <string name="errorCreatingBufferSize">ERROR: Error Creting Buffer Size</string>
+    <string name="errorSDCardPathError">ERROR: SD Card Path Error</string>
+    <string name="errorPlayingFile">Error: can not play file, file corrupted</string>
+   
+    
+    
+</resources>

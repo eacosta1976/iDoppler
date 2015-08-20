@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        
+        <item android:id="@+id/open" android:icon="@drawable/editicon" 
+         android:title="Editar" />
+ 
+        <!--
+        <item android:id="@+id/save" android:icon="@drawable/saveicon"
+        android:title="Language" />
+        -->
+    </menu>

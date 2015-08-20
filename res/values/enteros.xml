@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!--  Integer resources --> 
+   
+   <!-- LANGUAGE SELECTION -->
+   <item type="integer" name="POSENGLISH" format="integer">0</item>
+   <item type="integer" name="POSESPANOL" format="integer">1</item> 
+   
+   <!--  MAIN DOPPLER CONSTANTS -->
+   <item type="integer" name="HEARTH_DOWN" format="integer">0</item>
+   <item type="integer" name="HEARTH_UP" format="integer">1</item>
+   <item type="integer" name="RecordingTimeFrame" format="integer">15</item>
+   
+   
+   <!-- AUDIO JACK BROADCAST CONSTANTS -->
+   <item type="integer" name="AUDIO_JACK_OUT" format="integer">0</item>
+   <item type="integer" name="AUDIO_JACK_IN" format="integer">1</item>
+   <item type="integer" name="AUDIO_JACK_OTHER" format="integer">-1</item>
+   
+   <!--  ERROR CONSTANTS -->
+   <item type="integer" name="ERROR_AUDIO_NOT_INITIALIZED" format="integer">-1</item>
+   <item type="integer" name="ERROR_INVALID_OPERATION" format="integer">-2</item>
+   <item type="integer" name="ERROR_BAD_VALUE" format="integer">-3</item>
+   <item type="integer" name="ERROR_BUFFER_SIZE" format="integer">-4</item>
+   <item type="integer" name="ERROR_SD_CARD_PATH" format="integer">-5</item>
+   
+</resources>

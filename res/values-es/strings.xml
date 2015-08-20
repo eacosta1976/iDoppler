@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  MOTHER DATA STRINGS  -->
+    <string name="app_name">iDoppler</string>
+    <string name="MotherName">Tu Nombre</string>
+    <string name="BabyName">Nombre del bebe</string>
+    <string name="DueDate">Fecha del Nacimiento</string>
+    <string name="Email">Correo electronico</string>
+    
+    <!-- SUCCESS NOTIFICATIONS -->
+    <string name="motherdatareg_succes">Datos registrados exitosamente</string>
+    
+    <!--  ERROR NOTIFICATIONS -->
+    <string name="motherdatareg_error">Un error ocurrio al registrar los datos.</string>
+     <string name="noFileToPlay">No existe archivo para reproducir</string>
+    
+    <!-- DOPPLER MAIN SCREEN -->
+    <string name="startDoppler">Comenzar</string>
+    <string name="stopDoppler">Detener</string>
+    <string name="startPlay">Reproducir</string>
+    <string name="startRecording">Grabando latidos del corazon del bebe</string>
+    <string name="stopRecording">Deteniendo grabacion de latidos del corazon del bele</string>
+    <string name="reproducingBabyBeats">Reproduciendo latidos del corazon del bebe</string>
+    
+     <!--  Error Messages -->
+    <string name="errorDopplerNotConnected">Error: Doppler No conectado</string>
+    <string name="errorPlayingBabyBeats_DopplerConnected">Error: Desconecta Doppler para reproducir latidos del bebe</string>
+    <string name="errorStillRecordingBeats">Error: Grabando latidos del bebe, para reproducir finaliza la grabacion y desconecta el Doppler</string>
+    <string name="errorAudioNotInitialized">ERROR: Audio No inicializado</string>
+    <string name="errorAudioInvalidOperation">ERROR: Audio Operacion Invalida</string>
+    <string name="errorAudioBadValue">ERROR: Audio Valor Erroneo</string>
+    <string name="errorCreatingBufferSize">ERROR: Error Creando buffer de memoria</string>
+    <string name="errorSDCardPathError">ERROR: SD Card error de  ruta</string>
+    <string name="errorPlayingFile">Error: no se puede reproducir archivo, archivo corrompido</string>
+    
+</resources>

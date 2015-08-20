@@ -1,0 +1,127 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/lightblue">
+ 
+   <!--  Mom Notification Label --> 
+
+   <TextView
+       android:id="@+id/lblMomMessages"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="10dp"
+       android:textSize="15sp" />
+     
+   <!--  HEARTH -->
+    <ImageView
+        android:id="@+id/imgHearth"
+        android:layout_width = "match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/hearth0" 
+        android:layout_marginTop="20dp" 
+        android:layout_below="@+id/lblMomMessages"/>
+       
+    
+    <!-- BUTTONS -->
+    <LinearLayout
+        android:id="@+id/ltoutStartStopBtns"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imgHearth"
+        android:background="@color/lightblue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+    
+		    <TextView
+		        android:id="@+id/cmdStartRecording"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="30dp"
+		        android:text="@string/startDoppler"
+		        android:textColor="#FF69B4"
+		        android:textSize="20sp"
+		        android:textStyle="bold" 
+		        android:layout_weight="1"
+		        android:gravity="center_vertical|right"/>
+        
+    
+		    <TextView
+		        android:id="@+id/cmdStopRecording"
+		        android:layout_width="wrap_content"
+		        android:layout_height = "wrap_content"
+		        android:text="@string/stopDoppler"
+		        android:textSize="20sp"
+		        android:textColor="#FF69B4"
+		        android:textStyle="bold"
+		        android:layout_marginTop="30dp"
+		        android:layout_marginLeft="50dp"
+		        android:layout_toRightOf="@+id/cmdStartRecording"
+		        android:layout_weight="1"
+		        android:gravity="center_vertical"/>
+	</LinearLayout>	    
+	<LinearLayout
+	    android:id="@+id/ltoutReproduceBtns"
+	    android:orientation="horizontal"
+        android:layout_below="@+id/ltoutStartStopBtns"
+        android:background="@color/lightblue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        
+		     <TextView
+		         android:id="@+id/cmdReproduce"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerInParent="true"
+		         android:layout_weight="0.74"
+		         android:gravity="center_horizontal"
+		         android:text="@string/startPlay"
+		         android:textColor="#FF69B4"
+		         android:textSize="20sp"
+		         android:textStyle="bold" />
+
+    </LinearLayout>
+    
+  <!-- Buttons  -->
+	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ltoutReproduceBtns"
+        android:layout_marginTop="55dp" 
+        android:background="@color/lightblue">
+		     
+	  	     
+	          <Button
+	              android:id="@+id/cmdEditMotherData"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:background="@drawable/editicon"
+	              android:layout_alignParentLeft="true"
+	              android:layout_toLeftOf="@+id/centerPoint"
+	              android:layout_marginLeft="50dp"/>
+	          
+	          <TextView
+                 android:id="@+id/centerPoint"
+        		 android:text=""
+        		 android:layout_width="60dip"
+        		 android:layout_height="wrap_content"
+        		 android:layout_centerHorizontal="true" />
+	       
+	          <Button
+	              android:id="@+id/cmdLanguageData"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_alignParentRight="true"
+	              android:background="@drawable/langicon"
+	              android:layout_toRightOf="@+id/centerPoint"
+	              android:layout_marginRight="50dp"/>
+	              
+	       
+	  
+	
+	</RelativeLayout>
+  
+  </RelativeLayout>
+ 
+

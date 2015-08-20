@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Doppler.idoppler"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    
+    <!--  PERMISSIONS -->
+     <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"></uses-permission>
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+     
+    <!-- Application Settings (icon, label) -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/idopico"   
+        android:label="@string/app_name"
+         >
+        
+        <!-- SPLASH SCREEN -->
+        <activity
+            android:name="com.Doppler.idoppler.SplashScreen"
+            android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- SELECT IDIOM -->
+        <activity
+            android:name="com.Doppler.idoppler.selectIdiom"
+            android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>    
+        
+       </activity>
+            
+        <!-- MOTHER DATA SCREEN -->
+        <activity
+            android:name="com.Doppler.idoppler.MotherDataScreen"
+            android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.ALTERNATIVE"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- MAIN ACTIVITY -->
+        <activity
+            android:name="com.Doppler.idoppler.MainDoppler"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                 <action android:name="android.intent.action.MAIN"/>
+                 <category android:name="android.intent.category.ALTERNATIVE"/>
+            </intent-filter>
+        </activity>
+        
+        <!--  SERVICES -->
+        <!--  INTENT SERVICE TO PLAYBACK -->
+        <service android:name=".ReproduceBeatRT"  android:exported="false"/>
+     
+        <!--  SERVICE TO RECORD AUDIO -->
+        <service android:name=".recordBeat" android:exported = "false"/>
+  
+    </application>
+
+</manifest>
